@@ -1,0 +1,111 @@
+/* СБРОС ОТСТУПОВ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(145deg, #f8faff 0%, #eef2f7 100%);
+    color: #1a2634;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ===== ПОТОЛОК ===== */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===== КОНТЕНТ ПО ЦЕНТРУ ===== */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.center-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.center-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.center-content p {
+    font-size: 1.3rem;
+    color: #4a5c6e;
+    margin-bottom: 2rem;
+}
+
+/* ===== КНОПКА ===== */
+#chooseBtn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 0 #1a252f, 0 10px 25px rgba(44,62,80,0.3);
+    text-transform: uppercase;
+}
+
+#chooseBtn:hover {
+    background: #34495e;
+    transform: translateY(4px);
+    box-shadow: 0 4px 0 #1a252f, 0 12px 30px rgba(44,62,80,0.4);
+}
+
+#chooseBtn:active {
+    transform: translateY(8px);
+    box-shadow: 0 0 0 #1a252f, 0 15px 35px rgba(44,62,80,0.4);
+}
+
+/* ===== ПОДВАЛ ===== */
+footer {
+    background: #1e2b38;
+    color: #e0e6ed;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
